@@ -167,7 +167,7 @@ kfor() {
     kubectl port-forward -n $arg_pair "$port"
 }
 
-# [kfor] port-forward a service port to your local machine
+# [kforsvc] port-forward a service port to your local machine
 kforsvc() {
     local port="$1"
     [ -z "$port" ] && printf "kforsvc: missing argument.\nUsage: kforsvc PORT_TO_FORWARD\n" && return 255
